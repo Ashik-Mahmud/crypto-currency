@@ -1,0 +1,129 @@
+/* Stylesheet  */
+
+/* Import Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* base  */
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+    background: url(../images/background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 4rem 0rem;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+}
+/* Common Class  */
+.container{
+    max-width: 1270px;
+    margin: auto;
+}
+.container-fluid{
+    max-width: 100%;
+    padding: 0rem 1.5rem;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+/* header area style */
+
+header{
+    position: relative;
+    padding: 1.5rem 0rem;
+}
+header nav.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.nav .primary-menu {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.nav .primary-menu .logo{
+    width: 6%;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav ul a{
+    color: #fff;
+    font-weight: 500;
+    padding: 0rem 1.3rem;
+}
+
+.nav .lng-toggle {
+    position: relative;
+    border: 1px solid white;
+    padding: .3rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+main{
+    position: relative;
+}
+main .content{
+    padding: 4rem 0rem;
+    color: #fff;
+    padding-top: 10rem;
+}
+.colorize{
+    color: orange;
+    text-transform: capitalize;
+}
+
+.content h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.content p{
+    color: #fefefe;
+    margin: 1.5rem 0rem;
+    line-height: 1.7;
+}
+.content a{
+    padding: 1rem 2rem;
+    display: inline-block;
+    background: orange;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
