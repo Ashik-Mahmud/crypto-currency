@@ -39,6 +39,16 @@ ul{
     max-width: 1270px;
     margin: auto;
 }
+
+@media (max-width: 1270px) {
+    .container{
+        max-width: 100%;
+        padding: 0rem 1rem;
+    }
+}
+
+
+
 .container-fluid{
     max-width: 100%;
     padding: 0rem 1.5rem;
@@ -111,6 +121,7 @@ main .content{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
 .content p{
     color: #fefefe;
     margin: 1.5rem 0rem;
@@ -166,4 +177,42 @@ main .overview{
 .overview-box span.name{
     color: orange;
     font-weight: normal;
+}
+
+/* responsive  */
+
+@media (max-width: 620px) {
+    .primary-menu ul{
+        display: none;
+    }
+    .primary-menu .logo{
+        width: 30% !important
+    }
+    .content h1{
+        font-size: 3rem;
+    }
+main .overview{
+   justify-content: center;
+   margin-right: 0rem;
+   margin-top: 0rem;
+}
+
+
+
+}
+
+@media (max-width: 500px) {
+ 
+    main .overview {
+      flex-direction: column;
+      justify-content: center;
+      padding: 0rem 1rem;
+    }
+    .overview .overview-box{
+        width: 100%;
+        margin: 1rem;
+    }
+
+
+
 }
